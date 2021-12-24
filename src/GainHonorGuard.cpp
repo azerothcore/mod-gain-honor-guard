@@ -38,19 +38,19 @@ public:
     // Load Configuration Settings
     void SetInitialWorldSettings()
     {
-		GainHonorGuardEnable = sConfigMgr->GetBoolDefault("GainHonorGuard.Enable", 1);
-        GainHonorGuardAnnounceModule = sConfigMgr->GetBoolDefault("GainHonorGuard.Announce", 1);
+		GainHonorGuardEnable = sConfigMgr->GetOption<bool>("GainHonorGuard.Enable", 1);
+        GainHonorGuardAnnounceModule = sConfigMgr->GetOption<bool>("GainHonorGuard.Announce", 1);
 		
 		//Gain Honor Settings
-		GainHonorGuardOnGuardKill = sConfigMgr->GetBoolDefault("GainHonorGuard.GainHonorOnGuardKill", 0);
-        GainHonorGuardOnEliteKill = sConfigMgr->GetBoolDefault("GainHonorGuard.GainHonorOnEliteKill", 0);	
+		GainHonorGuardOnGuardKill = sConfigMgr->GetOption<bool>("GainHonorGuard.GainHonorOnGuardKill", 0);
+        GainHonorGuardOnEliteKill = sConfigMgr->GetOption<bool>("GainHonorGuard.GainHonorOnEliteKill", 0);	
 
 		//Announce honor gained
-		GainHonorGuardOnGuardKillAnnounce = sConfigMgr->GetBoolDefault("GainHonorGuard.GainHonorOnGuardKillAnnounce", 0);
-		GainHonorGuardOnEliteKillAnnounce = sConfigMgr->GetBoolDefault("GainHonorGuard.GainHonorOnEliteKillAnnounce", 0);
+		GainHonorGuardOnGuardKillAnnounce = sConfigMgr->GetOption<bool>("GainHonorGuard.GainHonorOnGuardKillAnnounce", 0);
+		GainHonorGuardOnEliteKillAnnounce = sConfigMgr->GetOption<bool>("GainHonorGuard.GainHonorOnEliteKillAnnounce", 0);
 
 		//Honor Rate
-		GainHonorRateEnable = sConfigMgr->GetBoolDefault("GainHonorGuard.GainHonorRateEnable", 0);
+		GainHonorRateEnable = sConfigMgr->GetOption<bool>("GainHonorGuard.GainHonorRateEnable", 0);
 		GainHonorRate = abs(sConfigMgr->GetFloatDefault("GainHonorGuard.GainHonorRate", 1.0));
 	}
 };
