@@ -51,7 +51,7 @@ public:
 
 		//Honor Rate
 		GainHonorRateEnable = sConfigMgr->GetOption<bool>("GainHonorGuard.GainHonorRateEnable", 0);
-		GainHonorRate = abs(sConfigMgr->GetFloatDefault("GainHonorGuard.GainHonorRate", 1.0));
+		GainHonorRate = abs(sConfigMgr->GetOption<float>("GainHonorGuard.GainHonorRate", 1.0));
 	}
 };
 
