@@ -1,5 +1,6 @@
 void AddGainHonorGuardScripts();
 
-void Addmod_gain_honor_guardScripts() {
+void Addmod_gain_honor_guardScripts()
+{
     AddGainHonorGuardScripts();
 }
