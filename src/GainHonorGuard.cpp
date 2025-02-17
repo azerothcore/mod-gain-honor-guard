@@ -67,7 +67,7 @@ public:
 
     GainHonorGuardAnnouce() : PlayerScript("GainHonorGuard") {}
 
-    void OnLogin(Player* player) override 
+    void OnPlayerLogin(Player* player) override 
     {
 
         // Announce Module
